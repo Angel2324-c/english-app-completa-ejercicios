@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Kids Interactive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌟 English Kids Interactive</h1>
+    <p>Aprende inglés con imágenes, voz, juegos y puntos</p>
+  </header>
+
+  <main class="container">
+    <section id="homeScreen" class="panel center">
+      <div class="emoji">📚🎧🧠</div>
+      <h2>Bienvenido</h2>
+      <p>App interactiva para aprender inglés desde nivel A1 hasta B2.</p>
+      <div class="actions">
+        <button class="btn btn-primary" onclick="showLevels()">Start Learning</button>
+        <button class="btn btn-light" onclick="testVoice()">🔊 Probar voz en inglés</button>
+      </div>
+      <div class="info-box">
+        <strong>Versión completa:</strong> A1, A2, B1 y B2 con más lecciones y más tipos de ejercicios.
+      </div>
+    </section>
+
+    <section id="levelScreen" class="panel hidden">
+      <div class="topbar">
+        <button class="btn btn-light" onclick="goHome()">⬅ Inicio</button>
+        <span class="badge">Selecciona un nivel</span>
+      </div>
+
+      <h2 class="center">Niveles de aprendizaje</h2>
+
+      <div class="grid">
+        <div class="card" onclick="selectLevel('A1')">
+          <div class="emoji">🌱</div>
+          <h3>A1 Beginner</h3>
+          <p>Palabras básicas, vocabulario visual y primeras frases.</p>
+          <button class="btn btn-green">Entrar a A1</button>
+        </div>
+
+        <div class="card" onclick="selectLevel('A2')">
+          <div class="emoji">🚀</div>
+          <h3>A2 Elementary</h3>
+          <p>Rutinas, preguntas, lugares, tiempo y acciones comunes.</p>
+          <button class="btn btn-green">Entrar a A2</button>
+        </div>
+
+        <div class="card" onclick="selectLevel('B1')">
+          <div class="emoji">🗣️</div>
+          <h3>B1 Intermediate</h3>
+          <p>Pasado, futuro, conversaciones y situaciones reales.</p>
+          <button class="btn btn-green">Entrar a B1</button>
+        </div>
+
+        <div class="card" onclick="selectLevel('B2')">
+          <div class="emoji">🏆</div>
+          <h3>B2 Upper Intermediate</h3>
+          <p>Opiniones, conectores, trabajo, lectura y expresiones.</p>
+          <button class="btn btn-green">Entrar a B2</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="topicScreen" class="panel hidden">
+      <div class="topbar">
+        <button class="btn btn-light" onclick="showLevels()">⬅ Niveles</button>
+        <span class="badge" id="currentLevelBadge">Nivel A1</span>
+        <span class="badge score" id="savedProgressBadge">Progreso: 0%</span>
+      </div>
+
+      <h2 class="center">Elige un tema</h2>
+      <div class="grid" id="topicGrid"></div>
+    </section>
+
+    <section id="lessonScreen" class="panel hidden center">
+      <div class="topbar">
+        <button class="btn btn-light" onclick="showTopics()">⬅ Temas</button>
+        <span class="badge" id="topicBadge">Tema</span>
+        <span class="badge score" id="scoreBadge">Puntos: 0</span>
+      </div>
+
+      <div class="progress-box">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+
+      <div id="studyArea">
+        <div id="lessonImageBox" class="lesson-emoji">🐶</div>
+        <div id="wordText" class="word">Dog</div>
+        <div id="meaningText" class="meaning">Perro</div>
+
+        <div class="actions">
+          <button class="btn btn-primary" onclick="playCurrentAudio()">🔊 Escuchar pronunciación</button>
+          <button class="btn btn-green" onclick="showQuestion()">Responder ejercicio ➜</button>
+        </div>
+      </div>
+
+      <div id="quizArea" class="hidden">
+        <div id="exerciseLabel" class="exercise-label">Exercise</div>
+        <h2 id="questionText">Which one is "Dog"?</h2>
+        <p id="questionHelp">Selecciona la respuesta correcta.</p>
+        <div id="quizVisualBox"></div>
+        <div id="optionsBox" class="options"></div>
+        <div id="typeBox" class="type-box"></div>
+        <div id="feedbackMessage" class="message"></div>
+        <div class="actions">
+          <button id="nextBtn" class="btn btn-primary hidden" onclick="nextLesson()">Siguiente ➜</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultScreen" class="panel hidden center">
+      <div class="emoji">🎉</div>
+      <h2>Resultado final</h2>
+      <p id="finalResultText"></p>
+      <div id="resultStats" class="stats-grid"></div>
+      <div class="actions">
+        <button class="btn btn-green" onclick="restartTopic()">Repetir tema</button>
+        <button class="btn btn-primary" onclick="showTopics()">Elegir otro tema</button>
+        <button class="btn btn-light" onclick="showLevels()">Cambiar nivel</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Proyecto educativo de inglés A1-B2 · Versión ampliada
+  </footer>
+
+  <script src="data/lessons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
