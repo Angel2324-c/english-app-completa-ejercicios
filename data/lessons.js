@@ -1367,6 +1367,86 @@ const appData = {
           }
         ]
       },
+{
+  "id": "technology",
+  "title": "Technology",
+  "icon": "💻",
+  "description": "Aprende vocabulario básico relacionado con la tecnología.",
+  "lessons": [
+    {
+      "word": "Computer",
+      "meaning": "Computadora",
+      "emoji": "💻",
+      "image": "",
+      "audio": "",
+      "sentence": "I use a computer.",
+      "sentenceMeaning": "Uso una computadora."
+    },
+    {
+      "word": "Keyboard",
+      "meaning": "Teclado",
+      "emoji": "⌨️",
+      "image": "",
+      "audio": "",
+      "sentence": "The keyboard is on the desk.",
+      "sentenceMeaning": "El teclado está sobre el escritorio."
+    },
+    {
+      "word": "Mouse",
+      "meaning": "Ratón",
+      "emoji": "🖱️",
+      "image": "",
+      "audio": "",
+      "sentence": "I use the mouse.",
+      "sentenceMeaning": "Uso el ratón."
+    },
+    {
+      "word": "Screen",
+      "meaning": "Pantalla",
+      "emoji": "🖥️",
+      "image": "",
+      "audio": "",
+      "sentence": "The screen is large.",
+      "sentenceMeaning": "La pantalla es grande."
+    },
+    {
+      "word": "Internet",
+      "meaning": "Internet",
+      "emoji": "🌐",
+      "image": "",
+      "audio": "",
+      "sentence": "I use the internet every day.",
+      "sentenceMeaning": "Uso internet todos los días."
+    },
+    {
+      "word": "Phone",
+      "meaning": "Teléfono",
+      "emoji": "📱",
+      "image": "",
+      "audio": "",
+      "sentence": "My phone is new.",
+      "sentenceMeaning": "Mi teléfono es nuevo."
+    },
+    {
+      "word": "Printer",
+      "meaning": "Impresora",
+      "emoji": "🖨️",
+      "image": "",
+      "audio": "",
+      "sentence": "The printer prints documents.",
+      "sentenceMeaning": "La impresora imprime documentos."
+    },
+    {
+      "word": "Headphones",
+      "meaning": "Audífonos",
+      "emoji": "🎧",
+      "image": "",
+      "audio": "",
+      "sentence": "I listen to music with headphones.",
+      "sentenceMeaning": "Escucho música con audífonos."
+    }
+  ]
+},      
       {
         "id": "prepositions",
         "title": "Prepositions",
