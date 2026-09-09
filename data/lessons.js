@@ -802,6 +802,87 @@ const appData = {
           }
         ]
       }
+,
+{
+  "id": "classroom_commands",
+  "title": "Classroom Commands",
+  "icon": "🏫",
+  "description": "Aprende instrucciones comunes utilizadas en el salón de clases.",
+  "lessons": [
+    {
+      "word": "Sit down",
+      "meaning": "Siéntate",
+      "emoji": "🪑",
+      "image": "",
+      "audio": "",
+      "sentence": "Please sit down.",
+      "sentenceMeaning": "Por favor, siéntate."
+    },
+    {
+      "word": "Stand up",
+      "meaning": "Levántate",
+      "emoji": "🧍",
+      "image": "",
+      "audio": "",
+      "sentence": "Please stand up.",
+      "sentenceMeaning": "Por favor, levántate."
+    },
+    {
+      "word": "Open your book",
+      "meaning": "Abre tu libro",
+      "emoji": "📖",
+      "image": "",
+      "audio": "",
+      "sentence": "Open your book, please.",
+      "sentenceMeaning": "Abre tu libro, por favor."
+    },
+    {
+      "word": "Close your book",
+      "meaning": "Cierra tu libro",
+      "emoji": "📕",
+      "image": "",
+      "audio": "",
+      "sentence": "Close your book.",
+      "sentenceMeaning": "Cierra tu libro."
+    },
+    {
+      "word": "Listen",
+      "meaning": "Escucha",
+      "emoji": "👂",
+      "image": "",
+      "audio": "",
+      "sentence": "Listen to the teacher.",
+      "sentenceMeaning": "Escucha al maestro."
+    },
+    {
+      "word": "Repeat",
+      "meaning": "Repite",
+      "emoji": "🔁",
+      "image": "",
+      "audio": "",
+      "sentence": "Repeat after me.",
+      "sentenceMeaning": "Repite después de mí."
+    },
+    {
+      "word": "Write",
+      "meaning": "Escribe",
+      "emoji": "✏️",
+      "image": "",
+      "audio": "",
+      "sentence": "Write your name.",
+      "sentenceMeaning": "Escribe tu nombre."
+    },
+    {
+      "word": "Read",
+      "meaning": "Lee",
+      "emoji": "📚",
+      "image": "",
+      "audio": "",
+      "sentence": "Read the sentence.",
+      "sentenceMeaning": "Lee la oración."
+    }
+  ]
+}      
     ]
   },
   "A2": {
