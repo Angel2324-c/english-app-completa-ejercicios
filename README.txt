@@ -92,4 +92,4 @@ Luego abre el navegador y presiona Ctrl + F5.
 - Agregar modo examen.
 - Agregar audios MP3 reales.
 - Convertirlo en PWA para instalar en Android.
-Proyecto publicado en GitHub mediante HTTPS y SSH.
+Proyecto publicado en GitHub mediante HTTPS y SSH.Configuracion SSH automatizada mediante script Bash.
